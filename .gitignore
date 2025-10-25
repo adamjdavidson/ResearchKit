@@ -1,0 +1,39 @@
+# ResearchKit Tool Repository
+# This is the TOOL repository, not a research project
+
+# Python (if any utility scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs and temporary files
+*.log
+.env
+.env.local
+*.lock
+
+# Test/example projects (if added)
+examples/.researchkit/
+test-projects/
+
+# Distribution files
+*.zip
+*.tar.gz
