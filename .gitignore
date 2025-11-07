@@ -34,6 +34,10 @@ env/
 examples/.researchkit/
 test-projects/
 
+# User research projects (if working inside ResearchKit folder)
+projects/*
+!projects/README.md
+
 # Distribution files
 *.zip
 *.tar.gz
