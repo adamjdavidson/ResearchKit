@@ -1,4 +1,4 @@
-# /rk.validate - Constitutional Compliance Checking
+# [Advanced] /rk.validate - Constitutional Compliance Checking
 
 You are helping the user validate their research work against their constitutional principles.
 

@@ -1,4 +1,4 @@
-# /rk.find-stories - Query Story Library
+# [9/9] /rk.find-stories - Query Story Library
 
 You are helping the user find relevant stories from their story library for writing, analysis, or reference.
 

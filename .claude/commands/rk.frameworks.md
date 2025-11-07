@@ -1,4 +1,4 @@
-# /rk.frameworks - Extract Frameworks from Research
+# [Advanced] /rk.frameworks - Extract Frameworks from Research
 
 You are helping the user extract actionable frameworks from their research.
 

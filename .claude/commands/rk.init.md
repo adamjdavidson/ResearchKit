@@ -1,4 +1,4 @@
-# /rk.init - Initialize ResearchKit in Current Directory
+# [1/9] /rk.init - Initialize ResearchKit in Current Directory
 
 You are helping the user initialize ResearchKit in their current directory.
 
@@ -21,13 +21,18 @@ Check if `.researchkit/` folder exists in current directory.
 
 ### Step 2: Get Project Information
 
-Ask the user:
-1. **"What's the name of this research project?"**
-   - This becomes the project title
-   - Example: "Corporate AI Transformation", "Organizational Culture Change"
+Ask the user conversationally (do NOT use AskUserQuestion for these):
 
-2. **"Brief description (optional):"**
-   - One-line summary of what this research is about
+1. **Project Name**:
+   - Ask: "What's the name of this research project?"
+   - Suggest format: "Use CamelCase, snake_case, or hyphen-separated (e.g., 'Corporate-AI-Transformation', 'Organizational_Culture_Change')"
+   - Wait for their response
+   - Store as PROJECT_NAME
+
+2. **Brief Description (Optional)**:
+   - Ask: "Would you like to add a brief one-line description? (Press Enter to skip)"
+   - If they provide one, store as PROJECT_DESCRIPTION
+   - If they skip, set PROJECT_DESCRIPTION to empty string
 
 ### Step 3: Create Directory Structure
 

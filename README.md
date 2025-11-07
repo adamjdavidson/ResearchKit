@@ -373,28 +373,28 @@ ResearchKit works with multiple AI code editors. Choose the one you're using:
 
 Once you've run `/rk.init`, you have access to these commands:
 
-### Setup & Foundation
-- **`/rk.init`** - Initialize ResearchKit in current directory
-- **`/rk.constitution`** - Create/update your research methodology principles
-- **`/rk.validate`** - Check your work against constitutional principles
+### Core Workflow (Complete in Order)
 
-### Question Development
-- **`/rk.question`** - Define and refine your research question
+**Step 1-3: Setup & Foundation**
+- **`[1/9] /rk.init`** - Initialize ResearchKit in current directory
+- **`[2/9] /rk.constitution`** - Create/update your research methodology principles
+- **`[3/9] /rk.question`** - Define and refine your research question
 
-### Research Planning
-- **`/rk.identify-paths`** - Discover research traditions and literature
-- **`/rk.collect-documents`** - Organize document collection
+**Step 4-5: Research Planning**
+- **`[4/9] /rk.identify-paths`** - Discover research traditions and literature
+- **`[5/9] /rk.collect-documents`** - Organize document collection
 
-### Active Research
-- **`/rk.create-stream`** - Start a disciplinary research stream (psychology, finance, etc.)
-- **`/rk.research`** - Guided research workflow with prompts
-- **`/rk.capture-story`** - Capture vivid, character-driven stories
-- **`/rk.find-stories`** - Query your story library
+**Step 6-9: Active Research**
+- **`[6/9] /rk.create-stream`** - Start a disciplinary research stream (psychology, finance, etc.)
+- **`[7/9] /rk.research`** - Guided research workflow with prompts
+- **`[8/9] /rk.capture-story`** - Capture vivid, character-driven stories
+- **`[9/9] /rk.find-stories`** - Query your story library
 
-### Synthesis & Writing
+### Advanced Commands (Use As Needed)
 - **`/rk.cross-stream`** - Find connections across disciplinary perspectives
 - **`/rk.frameworks`** - Extract actionable frameworks from research
 - **`/rk.write`** - Generate writing that integrates frameworks and stories
+- **`/rk.validate`** - Check your work against constitutional principles
 
 ---
 

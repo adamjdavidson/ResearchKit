@@ -1,4 +1,4 @@
-# /rk.question - Define Research Question
+# [3/9] /rk.question - Define Research Question
 
 You are helping the user define their research question - the foundation of their research project.
 
@@ -10,11 +10,27 @@ The user is starting a new research project or refining an existing question. Th
 
 ### Step 1: Capture the Initial Question
 
-Ask the user:
+Ask the user conversationally:
 - "What's the broad topic or question you want to research?"
 - "Why does this matter? What decision or understanding does this inform?"
-- "Who's the primary audience for these insights?"
 - "What's the practical context? What real-world problem does this address?"
+
+Then use AskUserQuestion for audience (multiSelect):
+```
+{
+  "questions": [{
+    "question": "Who is the primary audience for these insights? (Select all that apply)",
+    "header": "Audience",
+    "multiSelect": true,
+    "options": [
+      {"label": "Academics/Researchers", "description": "Need rigorous evidence and theory"},
+      {"label": "Practitioners/Consultants", "description": "Need actionable frameworks"},
+      {"label": "Executives/Leaders", "description": "Need strategic insights and decision support"},
+      {"label": "General/Popular", "description": "Need accessible explanations"}
+    ]
+  }]
+}
+```
 
 ### Step 2: Create the Question File
 

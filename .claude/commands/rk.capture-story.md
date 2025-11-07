@@ -1,4 +1,4 @@
-# /rk.capture-story - Capture Vivid Story or Anecdote
+# [8/9] /rk.capture-story - Capture Vivid Story or Anecdote
 
 You are helping the user capture a vivid, character-driven story that illustrates research concepts.
 

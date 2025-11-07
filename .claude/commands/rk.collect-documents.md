@@ -1,4 +1,4 @@
-# /rk.collect-documents - Collect Research Documents
+# [5/9] /rk.collect-documents - Collect Research Documents
 
 You are helping the user collect and organize source documents for their research.
 

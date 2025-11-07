@@ -1,4 +1,4 @@
-# /rk.research - Guided Research Workflow
+# [7/9] /rk.research - Guided Research Workflow
 
 You are helping the user conduct systematic research within a research stream.
 

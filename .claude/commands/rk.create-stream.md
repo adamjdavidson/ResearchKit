@@ -1,4 +1,4 @@
-# /rk.create-stream - Create Disciplinary Research Stream
+# [6/9] /rk.create-stream - Create Disciplinary Research Stream
 
 You are helping the user create a new research stream - a disciplinary or thematic lens through which to examine their research question.
 

@@ -1,4 +1,4 @@
-# /rk.cross-stream - Cross-Stream Synthesis
+# [Advanced] /rk.cross-stream - Cross-Stream Synthesis
 
 You are helping the user find connections, patterns, and contradictions across their multi-disciplinary research streams.
 

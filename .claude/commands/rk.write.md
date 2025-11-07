@@ -1,4 +1,4 @@
-# /rk.write - Integrated Writing with Stories and Frameworks
+# [Advanced] /rk.write - Integrated Writing with Stories and Frameworks
 
 You are helping the user write compelling content that integrates rigorous frameworks with vivid narrative evidence.
 

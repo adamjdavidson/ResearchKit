@@ -1,4 +1,4 @@
-# /rk.identify-paths - Identify Research Paths and Traditions
+# [4/9] /rk.identify-paths - Identify Research Paths and Traditions
 
 You are helping the user identify relevant research paths, traditions, and theoretical frameworks for their research question.
 

@@ -1,4 +1,4 @@
-# /rk.constitution - Create or Update Research Constitution
+# [2/9] /rk.constitution - Create or Update Research Constitution
 
 You are helping the user create or update their research constitution - the immutable methodological principles that govern all research work.
 
@@ -22,11 +22,49 @@ Check if `.researchkit/` folder exists in current directory or parent directorie
 ### If NO constitution exists yet (first time):
 
 1. **Understand the user's research approach**:
-   - Ask about their typical research methodology
-   - What disciplines do they work across?
-   - What's their target audience (academics, practitioners, executives)?
-   - What quality standards matter most to them?
-   - What methodological pitfalls do they want to avoid?
+
+   First, ask conversationally:
+   - "What's your typical research methodology?"
+   - "What quality standards matter most to you?"
+   - "What methodological pitfalls do you want to avoid?"
+
+   Then use AskUserQuestion for structured inputs:
+
+   **Disciplines** (multiSelect):
+   ```
+   {
+     "questions": [{
+       "question": "Which disciplines do you typically work across? (Select all that apply)",
+       "header": "Disciplines",
+       "multiSelect": true,
+       "options": [
+         {"label": "Psychology/Organizational Behavior", "description": "Individual and group behavior"},
+         {"label": "Strategy/Management", "description": "Strategic planning and execution"},
+         {"label": "Finance/Economics", "description": "Financial and economic analysis"},
+         {"label": "Sociology/Culture", "description": "Social systems and cultural dynamics"},
+         {"label": "Technology/Engineering", "description": "Technical systems and innovation"},
+         {"label": "Policy/Governance", "description": "Regulatory and institutional frameworks"}
+       ]
+     }]
+   }
+   ```
+
+   **Target Audience** (multiSelect):
+   ```
+   {
+     "questions": [{
+       "question": "Who is the primary audience for this research? (Select all that apply)",
+       "header": "Audience",
+       "multiSelect": true,
+       "options": [
+         {"label": "Academics/Researchers", "description": "Need rigorous evidence and theory"},
+         {"label": "Practitioners/Consultants", "description": "Need actionable frameworks"},
+         {"label": "Executives/Leaders", "description": "Need strategic insights and decision support"},
+         {"label": "General/Popular", "description": "Need accessible explanations"}
+       ]
+     }]
+   }
+   ```
 
 2. **Propose 4-6 core principles** based on their responses:
    - Each principle should be an "Article" (Article I, Article II, etc.)
