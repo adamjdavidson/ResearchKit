@@ -181,6 +181,139 @@ Now that Claude Code is installed, let's get ResearchKit.
 
 ---
 
+### Step 2.5: Choose Installation Mode
+
+ResearchKit offers two installation modes:
+
+#### 🎯 Mode 1: Project-Based (Recommended for Beginners)
+
+**How it works**: ResearchKit commands are available when working inside the `~/ResearchKit` directory.
+
+**Setup**: No additional steps needed! You can start using commands immediately.
+
+**Usage**:
+```bash
+cd ~/ResearchKit
+claude
+# Now use /rk.init and other commands
+```
+
+**Pros**:
+- ✅ Simple, no setup required
+- ✅ Isolated and predictable
+- ✅ Clear what's happening
+
+**Cons**:
+- ❌ Must work inside ResearchKit directory
+- ❌ Can't initialize projects in arbitrary locations
+
+---
+
+#### 🌍 Mode 2: Global Installation (Recommended for Power Users)
+
+**How it works**: ResearchKit commands are available from ANY directory on your system.
+
+**Setup**: Run the installation script once.
+
+##### Option A: Automated Installation (Easiest)
+
+```bash
+cd ~/ResearchKit
+bash install-researchkit-global.sh
+```
+
+The script will:
+- Create `~/.claude/commands/` directory if it doesn't exist
+- Create symbolic links to all ResearchKit commands
+- Verify installation
+- Report how many commands are available
+
+##### Option B: Manual Installation
+
+If you want to understand what's happening or prefer manual control:
+
+**Step 1: Create global commands directory**
+```bash
+mkdir -p ~/.claude/commands
+```
+This creates a hidden folder in your home directory where Claude Code looks for globally available commands.
+
+**Step 2: Create symbolic links**
+```bash
+ln -sf ~/ResearchKit/.claude/commands/rk.*.md ~/.claude/commands/
+```
+This creates symlinks (shortcuts) from the global directory to ResearchKit's command files. The `-sf` flags mean:
+- `-s`: Create symbolic link (not a copy)
+- `-f`: Force (overwrite if exists)
+
+**Step 3: Verify installation**
+```bash
+ls -la ~/.claude/commands/rk.*.md
+```
+You should see 13 symlinks pointing to ResearchKit command files.
+
+**Why symlinks?**
+- Changes in ResearchKit automatically reflected globally
+- No duplication of files
+- Easy to update with `git pull`
+- Simple to uninstall
+
+**Usage**:
+```bash
+# From ANY directory:
+cd ~/my-project
+claude
+# Now use /rk.init and other commands
+```
+
+**Pros**:
+- ✅ Commands available everywhere
+- ✅ Initialize research projects anywhere
+- ✅ More convenient workflow
+
+**Cons**:
+- ❌ Requires one-time setup
+- ❌ Slightly less obvious what's installed
+
+##### Uninstalling Global Mode
+
+If you want to remove global installation:
+
+**Automated:**
+```bash
+bash ~/ResearchKit/uninstall-researchkit-global.sh
+```
+
+**Manual:**
+```bash
+rm ~/.claude/commands/rk.*.md
+```
+
+This only removes the symlinks. Your `~/ResearchKit` directory remains intact, and you can still use commands when working inside that directory.
+
+---
+
+### Step 2.6: Verify Installation
+
+Test that ResearchKit is available:
+
+```bash
+# If using Project-Based mode:
+cd ~/ResearchKit
+claude
+
+# If using Global mode:
+cd ~  # or any directory
+claude
+
+# Then type:
+/rk
+```
+
+You should see ResearchKit commands appear in the autocomplete list (rk.init, rk.constitution, etc.)
+
+---
+
 ### Step 3: Start Your First Project
 
 Now for the exciting part - starting your research!
